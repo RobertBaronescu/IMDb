@@ -1,0 +1,414 @@
+/* elements */
+
+* {
+  font-style: normal;
+  font-family: Helvetica, sans-serif;
+}
+
+h4,
+p {
+  color: lightgray;
+}
+
+h3 {
+  color: #fff;
+}
+
+span {
+  color: #fff;
+}
+
+footer {
+  background-color: #000000;
+  padding-top: 50px;
+}
+
+main {
+  background-color: #000000;
+  padding-top: 76px;
+}
+
+/*classes */
+
+.navbar.imdb-navbar {
+  align-items: center;
+  display: flex;
+  padding: 12px 0;
+  background-color: #121212;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+.container.imdb-navbar-actions .image-and-menu {
+  display: flex;
+}
+
+.navbar.imdb-navbar .imdb-navbar-actions {
+  justify-content: flex-start;
+}
+
+.imdb-navbar .imdb-navbar-actions .imdb-action {
+  padding: 5px 15px 5px;
+  transition: all 0.3s ease-in;
+  margin-left: 8px;
+}
+
+.imdb-navbar .imdb-navbar-actions .imdb-action:hover {
+  color: #fff;
+  background-color: #2e2e2e;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+
+.imdb-navbar .imdb-navbar-actions .imdb-action .imdb-navbar-icon {
+  color: rgb(145 145 145);
+}
+
+.imdb-navbar .imdb-navbar-actions .imdb-action .imdb-navbar-icon span {
+  color: #fff;
+}
+
+.imdb-navbar .imdb-navbar-actions .imdb-search-action {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.fas.fa-search.imdb-search-magnifier {
+  position: absolute;
+  font-size: 16px;
+  right: 4px;
+  top: 7px;
+  color: rgb(145 145 145);
+  cursor: pointer;
+}
+
+.imdb-navbar .imdb-navbar-actions .imdb-search-action .imdb-search-input {
+  width: 500px;
+  outline: none;
+  padding-left: 8px;
+  border-radius: 6px;
+  height: 30px;
+  margin-left: 8px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: none;
+}
+
+.container .top-picks {
+  margin-top: 35px;
+  background-color: #2e2e2e;
+  padding: 20px;
+}
+
+.top-movies .card-text {
+  color: #fff;
+}
+
+.row.top-movies {
+  margin-top: 20px;
+}
+
+.fas.fa-chevron-right,
+.fas.fa-star {
+  color: rgb(245, 197, 24);
+  margin-right: 5px;
+}
+
+.horizontal-carousel .card-body {
+  background-color: #000000;
+  color: #fff;
+  height: 100%;
+}
+.col-sm .card-body {
+  background-color: #2e2e2e;
+}
+.col-sm-12 .card-body {
+  background-color: #2e2e2e;
+}
+.col-lg-3 .card-body {
+  background-color: #2e2e2e;
+}
+.col-md-6 .card-body {
+  background-color: #2e2e2e;
+}
+
+.fan-favorites {
+  margin-top: 35px;
+  background-color: #2e2e2e;
+  padding: 20px;
+}
+
+.fan-favorites .fan-favorite-movies {
+  margin-top: 20px;
+}
+
+.horizontal-card .col-md-5 {
+  height: 125px;
+}
+
+.horizontal-carousel .horizontal-card {
+  background-color: #2e2e2e;
+}
+
+.horizontal-carousel {
+  background-color: #2e2e2e;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  height: min-content;
+}
+
+.col-md-3 .up-next {
+  color: rgb(245, 197, 24);
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.col-md-3 .browse-trailers {
+  margin-top: 58px;
+  color: #fff;
+}
+
+.more-to-watch {
+  margin-top: 35px;
+  background-color: #2e2e2e;
+  padding: 20px;
+}
+
+.more-to-watch .more-description {
+  display: block;
+}
+
+.more-to-watch .more-description .more-to-watch-buttons {
+  margin-top: 10px;
+}
+
+.btn.btn-primary.btn-sm.more-button {
+  background-color: #2e2e2e;
+  color: #fff;
+  border-color: #fff;
+  width: 300px;
+  border-width: 2px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in;
+}
+
+.btn.btn-secondary.btn-sm.more-button {
+  background-color: #2e2e2e;
+  color: #fff;
+  border-color: #fff;
+  border-width: 2px;
+  width: 300px;
+  transition: all 0.3s ease-in;
+}
+@media (max-width: 389px) {
+  .btn.btn-primary.btn-sm.more-button {
+    width: 100%;
+  }
+  .btn.btn-secondary.btn-sm.more-button {
+    width: 100%;
+  }
+}
+.btn.btn-primary.btn-sm.more-button:hover,
+.btn.btn-secondary.btn-sm.more-button:hover {
+  background-color: rgb(255, 255, 0);
+  color: #121212;
+  font-weight: 600;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+footer .social-media {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.fab.fa-facebook-square,
+.fab.fa-instagram-square,
+.fab.fa-twitch,
+.fab.fa-twitter-square,
+.fab.fa-youtube {
+  font-size: x-large;
+  color: #fff;
+  margin-right: 30px;
+}
+
+footer .container.links {
+  margin-top: 45px;
+}
+
+footer .last-spans {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+footer .copyright {
+  margin-top: 45px;
+  font-size: small;
+}
+
+footer .card-img {
+  height: 133px;
+}
+
+footer .far.fa-play-circle {
+  font-size: x-large;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+.btn.btn-secondary.dropdown-toggle {
+  width: 50px;
+  outline: none;
+  padding-left: 8px;
+  height: 32px;
+  margin-left: 8px;
+  margin-right: -9px;
+  margin-top: -1px;
+  background-color: #fff;
+  color: #000000;
+  font-size: small;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0%;
+}
+
+.imdb-news-cards .imdb-news-card img {
+  width: 132px;
+  height: 125px;
+  object-fit: cover;
+}
+
+.imdb-news-cards .imdb-news-card .imdb-news-card-row {
+  background-color: #000000;
+}
+
+.imdb-news-cards .imdb-news-card .imdb-news-card-row .imdb-news-card-body {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+button.navbar-toggle.collapsed {
+  background-color: #121212;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .imdb-news-cards .imdb-news-card img {
+    width: 100%;
+  }
+  .more-to-watch .more-to-watch-buttons {
+    width: 100%;
+  }
+  .more-to-watch-buttons .btn.btn-primary.btn-sm.more-button {
+    width: 100%;
+  }
+  .more-to-watch-buttons .btn.btn-secondary.btn-sm.more-button {
+    width: 100%;
+  }
+}
+.top-picks .row.top-movies .col-sm .card:hover {
+  transform: translateY(-1rem);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.fan-favorites .row.fan-favorite-movies .card:hover {
+  transform: translateY(-1rem);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .container.links {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+  .imdb-navbar .imdb-navbar-actions .imdb-search-action {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  button.navbar-toggle.collapsed {
+    display: none;
+  }
+  .imdb-search-action .dropdown .dropdown-menu {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .navbar.navbar-expand-xl.imdb-navbar.navbar.navbar-default.navbar-static-top
+    .nav.navbar-nav {
+    display: none;
+  }
+
+  .imdb-menu-action.imdb-action {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .imdb-menu-action.imdb-action {
+    display: none;
+  }
+  .navbar.navbar-expand-xl.imdb-navbar.navbar.navbar-default.navbar-static-top {
+    height: fit-content;
+  }
+
+  .imdb-menu-action.imdb-action .imdb-navbar-icon {
+    margin-right: 3px;
+  }
+  .imdb-search-action {
+    margin-top: 5px;
+  }
+  .imdb-navbar .imdb-navbar-actions .imdb-search-action {
+    width: 75%;
+  }
+}
+@media (max-width: 767px) {
+  .imdb-menu-action.imdb-action {
+    display: none;
+  }
+  .imdb-navbar .imdb-navbar-actions .imdb-search-action {
+    width: 70%;
+  }
+}
+@media (max-width: 547px) {
+  .imdb-menu-action.imdb-action {
+    display: none;
+  }
+  .imdb-navbar .imdb-navbar-actions .imdb-search-action {
+    width: 65%;
+  }
+}
+@media (max-width: 471px) {
+  .imdb-navbar .imdb-navbar-actions .imdb-search-action {
+    width: 100%;
+  }
+  .fas.fa-search.imdb-search-magnifier {
+    position: absolute;
+    font-size: 16px;
+    right: 4px;
+    top: 7px;
+    color: rgb(145 145 145);
+    cursor: pointer;
+  }
+  .navbar.navbar-expand-xl.imdb-navbar.navbar.navbar-default.navbar-static-top
+    .container.imdb-navbar-actions {
+    display: flex;
+    justify-content: center;
+  }
+}
+.dropdown-menu .dropdown-item span {
+  color: #000000;
+}
+.col-md-12.col-lg-4.imdb-news-cards.mt-4.mt-lg-0 .up-next {
+  color: rgb(255, 255, 0);
+}
